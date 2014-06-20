@@ -22,6 +22,12 @@
 		1A156F70195411B900A9B526 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A156F4F195411B900A9B526 /* UIKit.framework */; };
 		1A156F78195411B900A9B526 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1A156F76195411B900A9B526 /* InfoPlist.strings */; };
 		1A156F7A195411B900A9B526 /* PlotlyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A156F79195411B900A9B526 /* PlotlyTests.m */; };
+		1A156F861954125700A9B526 /* PLFeed.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A156F851954125700A9B526 /* PLFeed.m */; };
+		1A156F89195412FE00A9B526 /* PLContributor.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A156F88195412FE00A9B526 /* PLContributor.m */; };
+		1A156F91195413EE00A9B526 /* TFHpple.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A156F8C195413EE00A9B526 /* TFHpple.m */; };
+		1A156F92195413EE00A9B526 /* TFHppleElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A156F8E195413EE00A9B526 /* TFHppleElement.m */; };
+		1A156F93195413EE00A9B526 /* XPathQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A156F90195413EE00A9B526 /* XPathQuery.m */; };
+		1A156F95195414A500A9B526 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A156F94195414A500A9B526 /* libxml2.dylib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +62,17 @@
 		1A156F75195411B900A9B526 /* PlotlyTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PlotlyTests-Info.plist"; sourceTree = "<group>"; };
 		1A156F77195411B900A9B526 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		1A156F79195411B900A9B526 /* PlotlyTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PlotlyTests.m; sourceTree = "<group>"; };
+		1A156F841954125700A9B526 /* PLFeed.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLFeed.h; sourceTree = "<group>"; };
+		1A156F851954125700A9B526 /* PLFeed.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLFeed.m; sourceTree = "<group>"; };
+		1A156F87195412FE00A9B526 /* PLContributor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLContributor.h; sourceTree = "<group>"; };
+		1A156F88195412FE00A9B526 /* PLContributor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLContributor.m; sourceTree = "<group>"; };
+		1A156F8B195413EE00A9B526 /* TFHpple.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFHpple.h; sourceTree = "<group>"; };
+		1A156F8C195413EE00A9B526 /* TFHpple.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFHpple.m; sourceTree = "<group>"; };
+		1A156F8D195413EE00A9B526 /* TFHppleElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFHppleElement.h; sourceTree = "<group>"; };
+		1A156F8E195413EE00A9B526 /* TFHppleElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFHppleElement.m; sourceTree = "<group>"; };
+		1A156F8F195413EE00A9B526 /* XPathQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XPathQuery.h; sourceTree = "<group>"; };
+		1A156F90195413EE00A9B526 /* XPathQuery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XPathQuery.m; sourceTree = "<group>"; };
+		1A156F94195414A500A9B526 /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1A156F95195414A500A9B526 /* libxml2.dylib in Frameworks */,
 				1A156F4E195411B900A9B526 /* CoreGraphics.framework in Frameworks */,
 				1A156F50195411B900A9B526 /* UIKit.framework in Frameworks */,
 				1A156F4C195411B900A9B526 /* Foundation.framework in Frameworks */,
@@ -104,6 +122,7 @@
 		1A156F4A195411B900A9B526 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				1A156F94195414A500A9B526 /* libxml2.dylib */,
 				1A156F4B195411B900A9B526 /* Foundation.framework */,
 				1A156F4D195411B900A9B526 /* CoreGraphics.framework */,
 				1A156F4F195411B900A9B526 /* UIKit.framework */,
@@ -115,6 +134,8 @@
 		1A156F51195411B900A9B526 /* Plotly */ = {
 			isa = PBXGroup;
 			children = (
+				1A156F8A195413B200A9B526 /* hpple */,
+				1A156F83195411DF00A9B526 /* Model */,
 				1A156F5A195411B900A9B526 /* PLAppDelegate.h */,
 				1A156F5B195411B900A9B526 /* PLAppDelegate.m */,
 				1A156F5D195411B900A9B526 /* Main.storyboard */,
@@ -155,6 +176,30 @@
 				1A156F76195411B900A9B526 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1A156F83195411DF00A9B526 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1A156F841954125700A9B526 /* PLFeed.h */,
+				1A156F851954125700A9B526 /* PLFeed.m */,
+				1A156F87195412FE00A9B526 /* PLContributor.h */,
+				1A156F88195412FE00A9B526 /* PLContributor.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		1A156F8A195413B200A9B526 /* hpple */ = {
+			isa = PBXGroup;
+			children = (
+				1A156F8B195413EE00A9B526 /* TFHpple.h */,
+				1A156F8C195413EE00A9B526 /* TFHpple.m */,
+				1A156F8D195413EE00A9B526 /* TFHppleElement.h */,
+				1A156F8E195413EE00A9B526 /* TFHppleElement.m */,
+				1A156F8F195413EE00A9B526 /* XPathQuery.h */,
+				1A156F90195413EE00A9B526 /* XPathQuery.m */,
+			);
+			name = hpple;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -255,10 +300,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1A156F92195413EE00A9B526 /* TFHppleElement.m in Sources */,
 				1A156F62195411B900A9B526 /* PLMasterViewController.m in Sources */,
 				1A156F65195411B900A9B526 /* PLDetailViewController.m in Sources */,
+				1A156F861954125700A9B526 /* PLFeed.m in Sources */,
+				1A156F93195413EE00A9B526 /* XPathQuery.m in Sources */,
+				1A156F91195413EE00A9B526 /* TFHpple.m in Sources */,
 				1A156F5C195411B900A9B526 /* PLAppDelegate.m in Sources */,
 				1A156F58195411B900A9B526 /* main.m in Sources */,
+				1A156F89195412FE00A9B526 /* PLContributor.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -385,6 +435,11 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Plotly/Plotly-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(SDKROOT)/usr/include/libxml2",
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+				);
 				INFOPLIST_FILE = "Plotly/Plotly-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
@@ -398,6 +453,11 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Plotly/Plotly-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(SDKROOT)/usr/include/libxml2",
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+				);
 				INFOPLIST_FILE = "Plotly/Plotly-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
