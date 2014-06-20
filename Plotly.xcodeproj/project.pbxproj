@@ -1,0 +1,478 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1A156F4C195411B900A9B526 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A156F4B195411B900A9B526 /* Foundation.framework */; };
+		1A156F4E195411B900A9B526 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A156F4D195411B900A9B526 /* CoreGraphics.framework */; };
+		1A156F50195411B900A9B526 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A156F4F195411B900A9B526 /* UIKit.framework */; };
+		1A156F56195411B900A9B526 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1A156F54195411B900A9B526 /* InfoPlist.strings */; };
+		1A156F58195411B900A9B526 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A156F57195411B900A9B526 /* main.m */; };
+		1A156F5C195411B900A9B526 /* PLAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A156F5B195411B900A9B526 /* PLAppDelegate.m */; };
+		1A156F5F195411B900A9B526 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A156F5D195411B900A9B526 /* Main.storyboard */; };
+		1A156F62195411B900A9B526 /* PLMasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A156F61195411B900A9B526 /* PLMasterViewController.m */; };
+		1A156F65195411B900A9B526 /* PLDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A156F64195411B900A9B526 /* PLDetailViewController.m */; };
+		1A156F67195411B900A9B526 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A156F66195411B900A9B526 /* Images.xcassets */; };
+		1A156F6E195411B900A9B526 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A156F6D195411B900A9B526 /* XCTest.framework */; };
+		1A156F6F195411B900A9B526 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A156F4B195411B900A9B526 /* Foundation.framework */; };
+		1A156F70195411B900A9B526 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A156F4F195411B900A9B526 /* UIKit.framework */; };
+		1A156F78195411B900A9B526 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1A156F76195411B900A9B526 /* InfoPlist.strings */; };
+		1A156F7A195411B900A9B526 /* PlotlyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A156F79195411B900A9B526 /* PlotlyTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1A156F71195411B900A9B526 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1A156F40195411B900A9B526 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1A156F47195411B900A9B526;
+			remoteInfo = Plotly;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1A156F48195411B900A9B526 /* Plotly.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Plotly.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1A156F4B195411B900A9B526 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1A156F4D195411B900A9B526 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		1A156F4F195411B900A9B526 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		1A156F53195411B900A9B526 /* Plotly-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Plotly-Info.plist"; sourceTree = "<group>"; };
+		1A156F55195411B900A9B526 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1A156F57195411B900A9B526 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1A156F59195411B900A9B526 /* Plotly-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Plotly-Prefix.pch"; sourceTree = "<group>"; };
+		1A156F5A195411B900A9B526 /* PLAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PLAppDelegate.h; sourceTree = "<group>"; };
+		1A156F5B195411B900A9B526 /* PLAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PLAppDelegate.m; sourceTree = "<group>"; };
+		1A156F5E195411B900A9B526 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1A156F60195411B900A9B526 /* PLMasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PLMasterViewController.h; sourceTree = "<group>"; };
+		1A156F61195411B900A9B526 /* PLMasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PLMasterViewController.m; sourceTree = "<group>"; };
+		1A156F63195411B900A9B526 /* PLDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PLDetailViewController.h; sourceTree = "<group>"; };
+		1A156F64195411B900A9B526 /* PLDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PLDetailViewController.m; sourceTree = "<group>"; };
+		1A156F66195411B900A9B526 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		1A156F6C195411B900A9B526 /* PlotlyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PlotlyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1A156F6D195411B900A9B526 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		1A156F75195411B900A9B526 /* PlotlyTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PlotlyTests-Info.plist"; sourceTree = "<group>"; };
+		1A156F77195411B900A9B526 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1A156F79195411B900A9B526 /* PlotlyTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PlotlyTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1A156F45195411B900A9B526 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A156F4E195411B900A9B526 /* CoreGraphics.framework in Frameworks */,
+				1A156F50195411B900A9B526 /* UIKit.framework in Frameworks */,
+				1A156F4C195411B900A9B526 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1A156F69195411B900A9B526 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A156F6E195411B900A9B526 /* XCTest.framework in Frameworks */,
+				1A156F70195411B900A9B526 /* UIKit.framework in Frameworks */,
+				1A156F6F195411B900A9B526 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1A156F3F195411B900A9B526 = {
+			isa = PBXGroup;
+			children = (
+				1A156F51195411B900A9B526 /* Plotly */,
+				1A156F73195411B900A9B526 /* PlotlyTests */,
+				1A156F4A195411B900A9B526 /* Frameworks */,
+				1A156F49195411B900A9B526 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1A156F49195411B900A9B526 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1A156F48195411B900A9B526 /* Plotly.app */,
+				1A156F6C195411B900A9B526 /* PlotlyTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1A156F4A195411B900A9B526 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1A156F4B195411B900A9B526 /* Foundation.framework */,
+				1A156F4D195411B900A9B526 /* CoreGraphics.framework */,
+				1A156F4F195411B900A9B526 /* UIKit.framework */,
+				1A156F6D195411B900A9B526 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1A156F51195411B900A9B526 /* Plotly */ = {
+			isa = PBXGroup;
+			children = (
+				1A156F5A195411B900A9B526 /* PLAppDelegate.h */,
+				1A156F5B195411B900A9B526 /* PLAppDelegate.m */,
+				1A156F5D195411B900A9B526 /* Main.storyboard */,
+				1A156F60195411B900A9B526 /* PLMasterViewController.h */,
+				1A156F61195411B900A9B526 /* PLMasterViewController.m */,
+				1A156F63195411B900A9B526 /* PLDetailViewController.h */,
+				1A156F64195411B900A9B526 /* PLDetailViewController.m */,
+				1A156F66195411B900A9B526 /* Images.xcassets */,
+				1A156F52195411B900A9B526 /* Supporting Files */,
+			);
+			path = Plotly;
+			sourceTree = "<group>";
+		};
+		1A156F52195411B900A9B526 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1A156F53195411B900A9B526 /* Plotly-Info.plist */,
+				1A156F54195411B900A9B526 /* InfoPlist.strings */,
+				1A156F57195411B900A9B526 /* main.m */,
+				1A156F59195411B900A9B526 /* Plotly-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1A156F73195411B900A9B526 /* PlotlyTests */ = {
+			isa = PBXGroup;
+			children = (
+				1A156F79195411B900A9B526 /* PlotlyTests.m */,
+				1A156F74195411B900A9B526 /* Supporting Files */,
+			);
+			path = PlotlyTests;
+			sourceTree = "<group>";
+		};
+		1A156F74195411B900A9B526 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1A156F75195411B900A9B526 /* PlotlyTests-Info.plist */,
+				1A156F76195411B900A9B526 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1A156F47195411B900A9B526 /* Plotly */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1A156F7D195411B900A9B526 /* Build configuration list for PBXNativeTarget "Plotly" */;
+			buildPhases = (
+				1A156F44195411B900A9B526 /* Sources */,
+				1A156F45195411B900A9B526 /* Frameworks */,
+				1A156F46195411B900A9B526 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Plotly;
+			productName = Plotly;
+			productReference = 1A156F48195411B900A9B526 /* Plotly.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1A156F6B195411B900A9B526 /* PlotlyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1A156F80195411B900A9B526 /* Build configuration list for PBXNativeTarget "PlotlyTests" */;
+			buildPhases = (
+				1A156F68195411B900A9B526 /* Sources */,
+				1A156F69195411B900A9B526 /* Frameworks */,
+				1A156F6A195411B900A9B526 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1A156F72195411B900A9B526 /* PBXTargetDependency */,
+			);
+			name = PlotlyTests;
+			productName = PlotlyTests;
+			productReference = 1A156F6C195411B900A9B526 /* PlotlyTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1A156F40195411B900A9B526 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = PL;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Everything is Gray";
+				TargetAttributes = {
+					1A156F6B195411B900A9B526 = {
+						TestTargetID = 1A156F47195411B900A9B526;
+					};
+				};
+			};
+			buildConfigurationList = 1A156F43195411B900A9B526 /* Build configuration list for PBXProject "Plotly" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1A156F3F195411B900A9B526;
+			productRefGroup = 1A156F49195411B900A9B526 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1A156F47195411B900A9B526 /* Plotly */,
+				1A156F6B195411B900A9B526 /* PlotlyTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1A156F46195411B900A9B526 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A156F67195411B900A9B526 /* Images.xcassets in Resources */,
+				1A156F56195411B900A9B526 /* InfoPlist.strings in Resources */,
+				1A156F5F195411B900A9B526 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1A156F6A195411B900A9B526 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A156F78195411B900A9B526 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1A156F44195411B900A9B526 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A156F62195411B900A9B526 /* PLMasterViewController.m in Sources */,
+				1A156F65195411B900A9B526 /* PLDetailViewController.m in Sources */,
+				1A156F5C195411B900A9B526 /* PLAppDelegate.m in Sources */,
+				1A156F58195411B900A9B526 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1A156F68195411B900A9B526 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A156F7A195411B900A9B526 /* PlotlyTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1A156F72195411B900A9B526 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1A156F47195411B900A9B526 /* Plotly */;
+			targetProxy = 1A156F71195411B900A9B526 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1A156F54195411B900A9B526 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1A156F55195411B900A9B526 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		1A156F5D195411B900A9B526 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1A156F5E195411B900A9B526 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1A156F76195411B900A9B526 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1A156F77195411B900A9B526 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1A156F7B195411B900A9B526 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		1A156F7C195411B900A9B526 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1A156F7E195411B900A9B526 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Plotly/Plotly-Prefix.pch";
+				INFOPLIST_FILE = "Plotly/Plotly-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		1A156F7F195411B900A9B526 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Plotly/Plotly-Prefix.pch";
+				INFOPLIST_FILE = "Plotly/Plotly-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		1A156F81195411B900A9B526 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Plotly.app/Plotly";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Plotly/Plotly-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "PlotlyTests/PlotlyTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		1A156F82195411B900A9B526 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Plotly.app/Plotly";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Plotly/Plotly-Prefix.pch";
+				INFOPLIST_FILE = "PlotlyTests/PlotlyTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1A156F43195411B900A9B526 /* Build configuration list for PBXProject "Plotly" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1A156F7B195411B900A9B526 /* Debug */,
+				1A156F7C195411B900A9B526 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1A156F7D195411B900A9B526 /* Build configuration list for PBXNativeTarget "Plotly" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1A156F7E195411B900A9B526 /* Debug */,
+				1A156F7F195411B900A9B526 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		1A156F80195411B900A9B526 /* Build configuration list for PBXNativeTarget "PlotlyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1A156F81195411B900A9B526 /* Debug */,
+				1A156F82195411B900A9B526 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1A156F40195411B900A9B526 /* Project object */;
+}
