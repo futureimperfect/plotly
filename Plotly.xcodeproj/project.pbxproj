@@ -28,6 +28,8 @@
 		1A156F92195413EE00A9B526 /* TFHppleElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A156F8E195413EE00A9B526 /* TFHppleElement.m */; };
 		1A156F93195413EE00A9B526 /* XPathQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A156F90195413EE00A9B526 /* XPathQuery.m */; };
 		1A156F95195414A500A9B526 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A156F94195414A500A9B526 /* libxml2.dylib */; };
+		1AF4E6981954D46400F09273 /* PLJSONLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AF4E6971954D46400F09273 /* PLJSONLoader.m */; };
+		1AF4E69B1954DB1900F09273 /* PLPlot.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AF4E69A1954DB1900F09273 /* PLPlot.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +75,10 @@
 		1A156F8F195413EE00A9B526 /* XPathQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XPathQuery.h; sourceTree = "<group>"; };
 		1A156F90195413EE00A9B526 /* XPathQuery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XPathQuery.m; sourceTree = "<group>"; };
 		1A156F94195414A500A9B526 /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
+		1AF4E6961954D46400F09273 /* PLJSONLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLJSONLoader.h; sourceTree = "<group>"; };
+		1AF4E6971954D46400F09273 /* PLJSONLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLJSONLoader.m; sourceTree = "<group>"; };
+		1AF4E6991954DB1900F09273 /* PLPlot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLPlot.h; sourceTree = "<group>"; };
+		1AF4E69A1954DB1900F09273 /* PLPlot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLPlot.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -185,6 +191,10 @@
 				1A156F851954125700A9B526 /* PLFeed.m */,
 				1A156F87195412FE00A9B526 /* PLContributor.h */,
 				1A156F88195412FE00A9B526 /* PLContributor.m */,
+				1AF4E6961954D46400F09273 /* PLJSONLoader.h */,
+				1AF4E6971954D46400F09273 /* PLJSONLoader.m */,
+				1AF4E6991954DB1900F09273 /* PLPlot.h */,
+				1AF4E69A1954DB1900F09273 /* PLPlot.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -306,8 +316,10 @@
 				1A156F861954125700A9B526 /* PLFeed.m in Sources */,
 				1A156F93195413EE00A9B526 /* XPathQuery.m in Sources */,
 				1A156F91195413EE00A9B526 /* TFHpple.m in Sources */,
+				1AF4E69B1954DB1900F09273 /* PLPlot.m in Sources */,
 				1A156F5C195411B900A9B526 /* PLAppDelegate.m in Sources */,
 				1A156F58195411B900A9B526 /* main.m in Sources */,
+				1AF4E6981954D46400F09273 /* PLJSONLoader.m in Sources */,
 				1A156F89195412FE00A9B526 /* PLContributor.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -523,6 +535,7 @@
 				1A156F7F195411B900A9B526 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1A156F80195411B900A9B526 /* Build configuration list for PBXNativeTarget "PlotlyTests" */ = {
 			isa = XCConfigurationList;
@@ -531,6 +544,7 @@
 				1A156F82195411B900A9B526 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
