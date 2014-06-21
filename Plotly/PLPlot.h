@@ -13,6 +13,8 @@
 -(id)initWithJSONDictionary:(NSDictionary *)jsonDictionary;
 
 @property (readonly) NSString *plotName;
+@property (readonly) NSString *plotUsername;
+@property (readonly) NSString *plotURL;
 @property (readonly) NSString *thumbnailURL;
 
 @end

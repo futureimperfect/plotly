@@ -11,6 +11,5 @@
 @interface PLJSONLoader : NSObject
 
 - (NSArray *)plotsFromJSONURL:(NSURL *)url;
-- (NSString *)getPlotlyFeedJSON:(NSURL *)url;
 
 @end
