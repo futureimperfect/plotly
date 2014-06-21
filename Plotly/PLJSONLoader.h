@@ -10,6 +10,7 @@
 
 @interface PLJSONLoader : NSObject
 
--(NSArray *)plotsFromJSONString:(NSString *)jsonString;
+- (NSArray *)plotsFromJSONURL:(NSURL *)url;
+- (NSString *)getPlotlyFeedJSON:(NSURL *)url;
 
 @end
