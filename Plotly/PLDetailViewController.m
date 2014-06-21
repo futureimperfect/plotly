@@ -9,43 +9,37 @@
 #import "PLDetailViewController.h"
 
 @interface PLDetailViewController ()
-- (void)configureView;
+
+@property (weak, nonatomic) IBOutlet UILabel *plotNameLabel;
+@property (weak, nonatomic) IBOutlet UILabel *plotUsernameLabel;
+@property (weak, nonatomic) IBOutlet UILabel *plotURLLabel;
+@property (weak, nonatomic) IBOutlet UIImageView *plotImage;
+
 @end
 
 @implementation PLDetailViewController
 
 #pragma mark - Managing the detail item
 
-- (void)setDetailItem:(id)newDetailItem
-{
-    if (_detailItem != newDetailItem) {
-        _detailItem = newDetailItem;
-        
-        // Update the view.
-        [self configureView];
-    }
-}
-
-- (void)configureView
-{
-    // Update the user interface for the detail item.
-
-    if (self.detailItem) {
-        self.detailDescriptionLabel.text = [self.detailItem description];
-    }
-}
-
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
-    [self configureView];
-}
 
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    NSString *plotlyURL = @"http://plot.ly";
+    NSURL *url = [NSURL URLWithString:self.plot.thumbnailURL];
+    NSData *data = [[NSData alloc] initWithContentsOfURL:url];
+    UIImage *plotImage = [[UIImage alloc] initWithData:data];
+
+    // Set the title
+    self.title = self.plot.plotName;
+
+    // Set the label texts
+    self.plotNameLabel.text = self.plot.plotName;
+    self.plotUsernameLabel.text = self.plot.plotUsername;
+    self.plotURLLabel.text = [plotlyURL stringByAppendingString:self.plot.plotURL];
+
+    // Set the image
+    self.plotImage.image = plotImage;
 }
 
 @end

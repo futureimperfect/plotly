@@ -11,27 +11,38 @@
 
 @implementation PLJSONLoader
 
--(NSArray *)plotsFromJSONString:(NSString *)jsonString
-{
-    // Convert our JSON String to an NSData object
-    NSData *jsonData = [jsonString dataUsingEncoding:NSUTF8StringEncoding];
+- (NSArray *)plotsFromJSONURL:(NSURL *)url {
+    // Create a NSURLRequest with the given URL
+    NSURLRequest *request = [NSURLRequest requestWithURL:url
+                                             cachePolicy:NSURLRequestReloadIgnoringLocalAndRemoteCacheData
+                                         timeoutInterval:15.0];
 
-    // Serialize JSON from our NSData object
-    NSDictionary *jsonDictionary = [NSJSONSerialization JSONObjectWithData:jsonData options:0 error:nil];
+    // Get the data
+    NSURLResponse *response;
+    NSError *error = nil;
+	NSData *data = [NSURLConnection sendSynchronousRequest:request returningResponse:&response error:&error];
+    if (error) {
+        NSLog(@"NSURLConnection error: %@", error);
+    }
 
-    // Initialize a mutable array to hold our plots
+    // Now create an NSArray from the JSON data
+    NSArray *jsonArray = [[NSArray alloc] initWithArray:[NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableContainers error:&error]];
+    if (error) {
+        NSLog(@"NSJSONSerialization error: %@", error);
+    }
+
+    // Create a new array to hold the plots
     NSMutableArray *plots = [[NSMutableArray alloc] init];
 
-    // Get an array of dictionaries with the key "nodeChildArray"
-    NSArray *array = [jsonDictionary objectForKey:@"nodeChildArray"];
-
-    // Iterate through our array of dicts
-    for (NSDictionary *dct in array) {
-        // Create a new PLPlot object for each and init with info from dict
-        PLPlot *plot = [[PLPlot alloc] initWithJSONDictionary:dct];
-        // Add the PLPlot object to our mutable array
+    // Iterate through the array of dictionaries
+    for (NSDictionary *dict in jsonArray) {
+        // Create a new PLPlot object and initialise it with information from the dictionary
+        PLPlot *plot = [[PLPlot alloc] initWithJSONDictionary:dict];
+        // Add the PLPlot object to the array
         [plots addObject:plot];
     }
+
+    // Return the array of PLPlot objects
     return plots;
 }
 
