@@ -12,9 +12,6 @@
 #import "PLPlot.h"
 #import "PLJSONLoader.h"
 
-//#import "PLFeed.h"
-//#import "PLContributor.h"
-
 @interface PLMasterViewController () {
     NSArray *_plots;
 }
@@ -55,9 +52,14 @@
 
     PLPlot *plot = [_plots objectAtIndex:indexPath.row];
 
+    // Set the texts
     cell.textLabel.text = plot.plotName;
     cell.detailTextLabel.text = plot.plotUsername;
-    cell.imageView.image = [UIImage imageNamed:@"foo.png"]; // should use thumbnail here
+
+    // Set a random cell image
+    NSMutableArray *imagesArray = [[NSMutableArray alloc]initWithObjects:@"black.png", @"blue.png", @"green.png", @"red.png", @"yellow.png", nil];
+    int random = arc4random() % imagesArray.count;
+    cell.imageView.image = [UIImage imageNamed:[imagesArray objectAtIndex:random]];
 
     return cell;
 }

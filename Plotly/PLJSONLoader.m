@@ -31,14 +31,14 @@
         NSLog(@"NSJSONSerialization error: %@", error);
     }
 
-    // Create a new array to hold the locations
+    // Create a new array to hold the plots
     NSMutableArray *plots = [[NSMutableArray alloc] init];
 
     // Iterate through the array of dictionaries
     for (NSDictionary *dict in jsonArray) {
-        // Create a new Location object for each one and initialise it with information in the dictionary
+        // Create a new PLPlot object and initialise it with information from the dictionary
         PLPlot *plot = [[PLPlot alloc] initWithJSONDictionary:dict];
-        // Add the Location object to the array
+        // Add the PLPlot object to the array
         [plots addObject:plot];
     }
 
