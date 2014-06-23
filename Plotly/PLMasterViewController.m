@@ -11,6 +11,7 @@
 
 #import "PLPlot.h"
 #import "PLJSONLoader.h"
+#import "PLConstants.h"
 
 @interface PLMasterViewController () {
     NSArray *_plots;
@@ -25,7 +26,7 @@
 
     // Create a new PLJSONLoader with http://plot.ly/feed_json_list
     PLJSONLoader *jsonLoader = [[PLJSONLoader alloc] init];
-    NSURL *url = [NSURL URLWithString:@"http://plot.ly/feed_json_list"];
+    NSURL *url = [NSURL URLWithString:[kPlotlyURL stringByAppendingString:@"/feed_json_list"]];
 
     // Load the JSON data on a background queue
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
