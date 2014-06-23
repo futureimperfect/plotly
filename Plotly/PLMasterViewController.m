@@ -24,6 +24,20 @@
 {
     [super viewDidLoad];
 
+    UIRefreshControl *refresher = [[UIRefreshControl alloc] init];
+    refresher.attributedTitle = [[NSAttributedString alloc] initWithString:@"Pull to Refresh"];
+    [refresher addTarget:self action:@selector(loadPlots) forControlEvents:UIControlEventValueChanged];
+    self.refreshControl = refresher;
+    [self loadPlots];
+}
+
+- (void)stopRefresh
+{
+    [self.refreshControl endRefreshing];
+}
+
+- (void)loadPlots
+{
     // Create a new PLJSONLoader with http://plot.ly/feed_json_list
     PLJSONLoader *jsonLoader = [[PLJSONLoader alloc] init];
     NSURL *url = [NSURL URLWithString:[kPlotlyURL stringByAppendingString:@"/feed_json_list"]];
@@ -34,6 +48,8 @@
         // Reload the table data on the main UI thread
         [self.tableView performSelectorOnMainThread:@selector(reloadData) withObject:nil waitUntilDone:YES];
     });
+
+    [self performSelector:@selector(stopRefresh) withObject:nil afterDelay:1.5];
 }
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
