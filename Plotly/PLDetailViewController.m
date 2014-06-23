@@ -7,12 +7,11 @@
 //
 
 #import "PLDetailViewController.h"
+#import "PLConstants.h"
 
 @interface PLDetailViewController ()
 
 @property (weak, nonatomic) IBOutlet UILabel *plotNameLabel;
-@property (weak, nonatomic) IBOutlet UILabel *plotUsernameLabel;
-@property (weak, nonatomic) IBOutlet UILabel *plotURLLabel;
 @property (weak, nonatomic) IBOutlet UIImageView *plotImage;
 
 @end
@@ -25,21 +24,62 @@
 {
     [super viewDidLoad];
 
-    NSString *plotlyURL = @"http://plot.ly";
+    // Set the image
     NSURL *url = [NSURL URLWithString:self.plot.thumbnailURL];
     NSData *data = [[NSData alloc] initWithContentsOfURL:url];
     UIImage *plotImage = [[UIImage alloc] initWithData:data];
+    self.plotImage.image = plotImage;
 
     // Set the title
     self.title = self.plot.plotName;
 
     // Set the label texts
     self.plotNameLabel.text = self.plot.plotName;
-    self.plotUsernameLabel.text = self.plot.plotUsername;
-    self.plotURLLabel.text = [plotlyURL stringByAppendingString:self.plot.plotURL];
 
-    // Set the image
-    self.plotImage.image = plotImage;
+    // Create a clickable link for the
+    // plot.ly user (opens in webview)
+    UIButton *plotUserLink = [[UIButton alloc] initWithFrame:CGRectMake(50, 400, 300, 28)];
+
+    NSMutableAttributedString *plotUsernameTitle = [[NSMutableAttributedString alloc] initWithString:self.plot.plotUsername];
+
+    [plotUsernameTitle addAttribute:NSUnderlineStyleAttributeName
+                              value:[NSNumber numberWithInteger:NSUnderlineStyleSingle]
+                              range:NSMakeRange(0, [plotUsernameTitle length])];
+
+    [plotUsernameTitle addAttribute:NSForegroundColorAttributeName value:[UIColor colorWithRed:0.5058 green:0.7725 blue:0.9176 alpha:1.0] range:NSMakeRange(0, [plotUsernameTitle length])];
+    [plotUserLink setContentHorizontalAlignment:UIControlContentHorizontalAlignmentLeft];
+    [plotUserLink setAttributedTitle:plotUsernameTitle forState:UIControlStateNormal];
+
+    [plotUserLink addTarget:self action:@selector(openPlotUserWebView) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:plotUserLink];
+
+    // Create a clickable link for the plot
+    // (opens in webview)
+    UIButton *linkButton = [[UIButton alloc] initWithFrame:CGRectMake(20, 450, 300, 28)];
+
+    NSMutableAttributedString *title = [[NSMutableAttributedString alloc] initWithString:[kPlotlyURL stringByAppendingString:self.plot.plotURL]];
+    [title addAttribute:NSUnderlineStyleAttributeName value:[NSNumber numberWithInteger:NSUnderlineStyleSingle] range:NSMakeRange(0, [title length])];
+    [title addAttribute:NSForegroundColorAttributeName value:[UIColor colorWithRed:0.5058 green:0.7725 blue:0.9176 alpha:1.0] range:NSMakeRange(0, [title length])];
+    [linkButton setContentHorizontalAlignment:UIControlContentHorizontalAlignmentLeft];
+    [linkButton setAttributedTitle:title forState:UIControlStateNormal];
+    linkButton.titleLabel.font = [UIFont systemFontOfSize:12];
+
+    [linkButton addTarget:self action:@selector(openPlotWebView) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:linkButton];
+}
+
+- (void)openPlotWebView
+{
+    UIWebView *webView = [[UIWebView alloc] initWithFrame:self.view.bounds];
+    [webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:[kPlotlyURL stringByAppendingString:self.plot.plotURL]]]];
+    [self.view addSubview:webView];
+}
+
+- (void)openPlotUserWebView
+{
+    UIWebView *webView = [[UIWebView alloc] initWithFrame:self.view.bounds];
+    [webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:[kPlotlyURL stringByAppendingString:self.plot.plotUserURL]]]];
+    [self.view addSubview:webView];
 }
 
 @end

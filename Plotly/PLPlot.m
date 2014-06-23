@@ -14,6 +14,7 @@
 {
     if (self = [self init]) {
         _plotName = [jsonDictionary objectForKey:@"plot_name"];
+        _plotUserURL = [jsonDictionary objectForKey:@"user_url"];
         _plotUsername = [jsonDictionary objectForKey:@"username"];
         _plotURL = [jsonDictionary objectForKey:@"plot_url"];
         _thumbnailURL = [jsonDictionary objectForKey:@"thumbnail_url"];

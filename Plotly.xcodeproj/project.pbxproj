@@ -25,6 +25,7 @@
 		1A156F95195414A500A9B526 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A156F94195414A500A9B526 /* libxml2.dylib */; };
 		1AF4E6981954D46400F09273 /* PLJSONLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AF4E6971954D46400F09273 /* PLJSONLoader.m */; };
 		1AF4E69B1954DB1900F09273 /* PLPlot.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AF4E69A1954DB1900F09273 /* PLPlot.m */; };
+		1AF4E6A21957B00700F09273 /* PLConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AF4E6A11957B00700F09273 /* PLConstants.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +65,8 @@
 		1AF4E6971954D46400F09273 /* PLJSONLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLJSONLoader.m; sourceTree = "<group>"; };
 		1AF4E6991954DB1900F09273 /* PLPlot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLPlot.h; sourceTree = "<group>"; };
 		1AF4E69A1954DB1900F09273 /* PLPlot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLPlot.m; sourceTree = "<group>"; };
+		1AF4E6A01957B00700F09273 /* PLConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLConstants.h; sourceTree = "<group>"; };
+		1AF4E6A11957B00700F09273 /* PLConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLConstants.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +136,8 @@
 				1A156F61195411B900A9B526 /* PLMasterViewController.m */,
 				1A156F63195411B900A9B526 /* PLDetailViewController.h */,
 				1A156F64195411B900A9B526 /* PLDetailViewController.m */,
+				1AF4E6A01957B00700F09273 /* PLConstants.h */,
+				1AF4E6A11957B00700F09273 /* PLConstants.m */,
 				1A156F66195411B900A9B526 /* Images.xcassets */,
 				1A156F52195411B900A9B526 /* Supporting Files */,
 			);
@@ -279,6 +284,7 @@
 			files = (
 				1A156F62195411B900A9B526 /* PLMasterViewController.m in Sources */,
 				1A156F65195411B900A9B526 /* PLDetailViewController.m in Sources */,
+				1AF4E6A21957B00700F09273 /* PLConstants.m in Sources */,
 				1AF4E69B1954DB1900F09273 /* PLPlot.m in Sources */,
 				1A156F5C195411B900A9B526 /* PLAppDelegate.m in Sources */,
 				1A156F58195411B900A9B526 /* main.m in Sources */,
