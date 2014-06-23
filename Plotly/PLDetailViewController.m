@@ -24,11 +24,13 @@
 {
     [super viewDidLoad];
 
-    // Set the image
-    NSURL *url = [NSURL URLWithString:self.plot.thumbnailURL];
-    NSData *data = [[NSData alloc] initWithContentsOfURL:url];
-    UIImage *plotImage = [[UIImage alloc] initWithData:data];
-    self.plotImage.image = plotImage;
+    // Get the image asynchronously, set when done
+    NSOperationQueue *queue = [[NSOperationQueue alloc] init];
+    NSInvocationOperation *operation = [[NSInvocationOperation alloc]
+                                        initWithTarget:self
+                                        selector:@selector(loadPlotImage)
+                                        object:nil];
+    [queue addOperation:operation];
 
     // Set the title
     self.title = self.plot.plotName;
@@ -66,6 +68,18 @@
 
     [linkButton addTarget:self action:@selector(openPlotWebView) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:linkButton];
+}
+
+- (void)loadPlotImage
+{
+    NSData *imageData = [[NSData alloc] initWithContentsOfURL:[NSURL URLWithString:self.plot.thumbnailURL]];
+    UIImage *image = [[UIImage alloc] initWithData:imageData];
+    [self performSelectorOnMainThread:@selector(displayPlotImage:) withObject:image waitUntilDone:NO];
+}
+
+- (void)displayPlotImage:(UIImage *)image
+{
+    self.plotImage.image = image;
 }
 
 - (void)openPlotWebView

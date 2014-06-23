@@ -57,7 +57,7 @@
     cell.detailTextLabel.text = plot.plotUsername;
 
     // Set a random cell image
-    NSMutableArray *imagesArray = [[NSMutableArray alloc]initWithObjects:@"black.png", @"blue.png", @"green.png", @"red.png", @"yellow.png", nil];
+    NSMutableArray *imagesArray = [[NSMutableArray alloc] initWithObjects:@"black.png", @"blue.png", @"green.png", @"red.png", @"yellow.png", nil];
     int random = arc4random() % imagesArray.count;
     cell.imageView.image = [UIImage imageNamed:[imagesArray objectAtIndex:random]];
 
